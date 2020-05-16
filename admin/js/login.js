@@ -6,7 +6,8 @@ $(function () {
         //5.若数据无问题，则发送请求;反之不能发送
         $.ajax({
             type: 'post',
-            url: 'http://localhost:8080/api/v1/admin/user/login',
+            // url: 'http://localhost:8080/api/v1/admin/user/login',
+            url: BigNew.user_login,
             //3.获取登录的数据
             data: $(this).serialize(), //将所有有name属性的input和select标签拼接成字符串
             //4.判断用户名和密码是否为空
