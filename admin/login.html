@@ -33,13 +33,31 @@
       <form class="login_form">
         <i class="iconfont icon-user"></i>
         <i class="iconfont icon-key"></i>
-        <input type="text" class="input_txt" placeholder="邮箱/手机号" />
-        <input type="password" class="input_pass" placeholder="密码" />
+        <input type="text" class="input_txt" name="username" placeholder="邮箱/手机号" />
+        <input type="password" class="input_pass" name="password" placeholder="密码" />
         <input type="submit" class="input_sub" value="登 录" />
       </form>
     </div>
   </div>
 
+      <!-- 使用bootstrap的模态框 -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">温馨提示!</h4>
+            </div>
+            <div class="modal-body">
+             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">确认</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
