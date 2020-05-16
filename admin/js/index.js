@@ -25,5 +25,14 @@ $(function () {
     //     }
     // }
 
-    
+    //3.退出功能
+    //3.1给退出按钮添加事件
+    $('.logout').on('click',function(){
+    //3.2删除token
+    localStorage.removeItem('token')
+    //3.3回到login.html
+    location.href='./login.html'
+    })
+
+   
 })
