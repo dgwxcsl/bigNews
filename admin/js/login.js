@@ -30,8 +30,9 @@ $(function () {
                 $('.modal-body').text(res.msg).parent().parent().parent().modal()
                 if (res.code == 200) {
                     //此事件在模态框被隐藏（并且同时在 CSS 过渡效果完成）之后被触发。(模态框被隐藏即点击确定按钮后跳转)
-                    window.localStorage.setItem('token', res.token)
-                    $('.modal').on('hidden.bs.modal', function (e) {
+
+                    $('.modal').on('hidden.bs.modal', function () {
+                        window.localStorage.setItem('token', res.token)
                         window.location.href = './index.html'
                     })
                 }
